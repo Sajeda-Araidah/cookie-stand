@@ -12,5 +12,18 @@ About Salmon Cookies, soon with franchises internationally, needs to calculate t
 
 Because we are early in the life of this business, we will need to build an application that is adaptable. Pat will need to be able to add and remove locations from the daily projections report, and Pat will also need to be able to easily modify the input numbers for each location based on day of the week, special events, and other factors. Pat would like to see these numbers with nice formatting in a web application.
 
-To See The hint About What I say [Sales](sales.html)
+# LICENSE
+It's Done  **BY SAJEDA ARAIDAH** 
+
+# COODING AND TOOLS
+
+HTML , CSS ,JavaScript language.
+
+Visual Studio Enviroment .
+
+# MIT License
+
+Copyright (c) 2021 S@jed@ Ar@id@h
+
+To See The hint About What I say [Sales](index.html)
 
