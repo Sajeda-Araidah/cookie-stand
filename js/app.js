@@ -15,7 +15,7 @@ const Seattle = {
 
     
     render: function () {
-        const container = document.getElementById('Cookie');
+        const container = document.getElementById('Seattle');
         console.log(container);
         const articleEl = document.createElement('article');
         container.appendChild(articleEl);
@@ -66,7 +66,7 @@ const Tokya = {
         this.numOfCustomer = getRandomNumber(this.MinCust, this.MaxCust);
     },
     render: function () {
-        const container = document.getElementById('Cookie');
+        const container = document.getElementById('Tokya');
         console.log(container);
         const articleEl = document.createElement('article');
         container.appendChild(articleEl);
@@ -101,7 +101,7 @@ Tokya.getRondom();
 //Tokya.calculatNum ();
 Tokya.render();
 
-const Dubi = {
+const Dubai = {
     MinCust : 11,
     MaxCust :38,
     AvgCookie : 3.7,
@@ -113,7 +113,7 @@ const Dubi = {
         this.numOfCustomer = getRandomNumber(this.MinCust, this.MaxCust);
     },
     render: function () {
-        const container = document.getElementById('Cookie');
+        const container = document.getElementById('Dubai');
         console.log(container);
         const articleEl = document.createElement('article');
         container.appendChild(articleEl);
@@ -146,9 +146,9 @@ const Dubi = {
 function getRandomNumber(min, max) {
     return Math.floor(Math.random() * (max - min + 1) + min);
 }
-Dubi.getRondom();
-//Dubi.calculatNum ();
-Dubi.render();
+Dubai.getRondom();
+//Dubai.calculatNum ();
+Dubai.render();
 
 
 
@@ -158,13 +158,14 @@ const Paris = {
     MaxCust :38,
     AvgCookie : 2.3,
     numOfCustomer: 0,
-    numOfCookies: [],
+    numOfCookiesPerhour: [],
+    totalOfsales :0 ,
     getRondom: function () {
         console.table(this);
         this.numOfCustomer = getRandomNumber(this.MinCust, this.MaxCust);
     },
     render: function () {
-        const container = document.getElementById('Cookie');
+        const container = document.getElementById('Paris');
         console.log(container);
         const articleEl = document.createElement('article');
         container.appendChild(articleEl);
@@ -206,14 +207,15 @@ const Lima = {
     MaxCust :16,
     AvgCookie : 4.6,
    AvgCookie : 2.3,
-    numOfCustomer: 0,
-    numOfCookies: [],
+   numOfCustomer: 0,
+   numOfCookiesPerhour: [],
+   totalOfsales :0 ,
     getRondom: function () {
         console.table(this);
         this.numOfCustomer = getRandomNumber(this.MinCust, this.MaxCust);
     },
     render: function () {
-        const container = document.getElementById('Cookie');
+        const container = document.getElementById('Lima');
         console.log(container);
         const articleEl = document.createElement('article');
         container.appendChild(articleEl);
