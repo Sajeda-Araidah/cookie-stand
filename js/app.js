@@ -23,7 +23,7 @@ function cookie (name,MinCust,MaxCust,avgCookie )
     }
 
  
-cookie.prototype.CustomEachHourFun=function{
+cookie.prototype.CustomEachHourFun = function (){
 for (let i = 0; i <  hours.length; i++) {
     this.(customereachHours.push(getRondomNumber(this.MinCust,this.MaxCust));
     
