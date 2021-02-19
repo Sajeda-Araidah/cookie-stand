@@ -1,3 +1,69 @@
 table , td , th {
-    bordar : solid black 2px ;
+   /* border : solid black 2px ;*/
+    text-align: center;
 }
+
+
+body
+{
+max-width: 70%;
+text-align: center;
+margin: auto;
+}
+header  nav ,footer {
+    padding: 20px;
+    background-color: peru;
+    color: white;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 17px;
+    margin-top: 34px;
+}header img {
+  
+    border-radius: 59%;
+    width: 200px;
+    margin-top: -114px;
+    border: dashed 1px peru;
+   
+  }
+a{
+    text-decoration: none;
+    color: white;
+}
+
+ ul {
+display: inline;
+
+}
+#ul1{
+    margin-right: 335px;
+    margin-left: -71px;
+}
+
+ li {
+    display:inline;
+    padding-left: 10px;
+   
+}
+
+
+  h2{
+
+    font-family: 'Great Vibes', cursive;
+    color: peru;
+    font-size: 52px;
+  }
+
+  #tableSales{
+      width:100%;
+      border:0px;
+  }
+
+  #tableSales thead tr{
+    background-color: peru;
+    color: white;
+  }
+
+  #tableSales tr th{
+    background-color: peru;
+    color: white;
+  }

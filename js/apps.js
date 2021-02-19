@@ -27,6 +27,10 @@ CookieShop.prototype.custPerHr = function () {
 CookieShop.prototype.cookiesPerHr = function () {
   return Math.round(this.avrageCookiesSale * this.custPerHr());
 };
+
+var tableElement = document.createElement('table')
+tableElement.setAttribute('id','tableSales');
+
 // Header Row Function
   function makeHeaderRow() { 
   let theadElement = document.createElement('thead');
@@ -40,12 +44,14 @@ CookieShop.prototype.cookiesPerHr = function () {
     trElement.appendChild(thElement);
   }
   let table = document.getElementById('seattle');
+
   thElement = document.createElement('th');
   thElement.textContent = 'Totals/daily ';
   trElement.appendChild(thElement);
   theadElement.appendChild(trElement);
+  tableElement.append(theadElement);
 
-  table.appendChild(theadElement);
+  table.appendChild(tableElement);
 }
 
 
@@ -71,7 +77,8 @@ CookieShop.prototype.render = function ()
   let tdElement = document.createElement('td');
   tdElement.textContent = totalCookiesSold;
   trElement.appendChild(tdElement);
-  table.appendChild(trElement);
+  tableElement.append(trElement);
+  table.appendChild(tableElement);
 };
 
 
@@ -100,7 +107,8 @@ CookieShop.prototype.render = function ()
   let tdElement = document.createElement('td');
   tdElement.textContent = totalCookie;
   trElement.appendChild(tdElement);
-  table.appendChild(trElement);
+  tableElement.append(trElement);
+  table.appendChild(tableElement);
 }
 
 
