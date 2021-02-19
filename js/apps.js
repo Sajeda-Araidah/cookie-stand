@@ -5,9 +5,9 @@ let cookieShop = [];
 
 let parent=document.getElementById('seattle');
 
-let imageElement =document.createElement('img');
+/*let imageElement =document.createElement('img');
 parent.appendChild(imageElement);
-imageElement.setAttribute('src','img/salmon.png');
+imageElement.setAttribute('src','img/salmon.png');*/
 
 
 
