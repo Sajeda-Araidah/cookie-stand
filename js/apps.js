@@ -2,7 +2,7 @@
 let hours = ['6am', '7am', '8am', '9am', '10am', '11am', '12pm',
              '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm'];
 let cookieShop = [];
-
+ console.log("sajeda");
 let parent=document.getElementById('seattle');
 
 /*let imageElement =document.createElement('img');
@@ -127,3 +127,27 @@ function allLocation() {
 makeHeaderRow();
 allLocation();
 totalCookiesPerHour();
+
+
+/////////////////////////////////////////////////////////////
+var cookieForm =document.getElementById("cookieform");
+cookieForm.addEventListener('submit',branch);
+function branch(event){
+  
+  event.preventDefault();
+ 
+  
+  var loc=(event.target.name.value); console.log(typeof(event.target.name.value));
+  var min1=parseInt(event.target.min.value);
+  var max1=parseInt(event.target.max.value);
+  var avg1n=parseInt(event.target.avg.value);
+  
+  var cc = new CookieShop(loc,min1,max1,avg1n)
+  tableElement.deleteRow(-1);
+  cc.render();
+  totalCookiesPerHour();
+  cookieform.reset();
+}
+
+
+

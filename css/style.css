@@ -39,7 +39,7 @@ display: inline;
     margin-left: -71px;
 }
 
- li {
+ .w {
     display:inline;
     padding-left: 10px;
    
@@ -75,3 +75,13 @@ display: inline;
       border-radius:8px;	
   }
   
+ li .w3 {
+  
+  color: lightslategray;
+  font-family: 'Yellowtail',cursive;;
+  font-size: larger;
+  text-decoration: none;
+
+
+} 
+
